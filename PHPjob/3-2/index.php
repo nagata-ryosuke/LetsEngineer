@@ -3,14 +3,16 @@
 
 <?php
 
-$fruits = ["りんご" => "100", "みかん" => "150", "もも" => "500"];
-$quantity = [3,1,6];
+const TAX = 1.1;
 
-function basket($fruits, $quantity) {
-    return $fruits * $quantity;
+$products = ["鉛筆" => 100 , "消しゴム" => 150 , "物差し" => 500];
+
+foreach ($products as $key => $value) {
+    echo $key;
+    echo 'は';
+    echo $value * TAX;
+    echo '円です。';
+    echo '<br>';
 }
 
-foreach ($fruits as $fruit => $value) {
-    echo $fruit. "は". basket(). "円です". "<br>";
-}
 ?>
