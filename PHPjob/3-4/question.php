@@ -1,10 +1,22 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
+=======
+<?php
+$name = $_POST['name'];
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+>>>>>>> Stashed changes
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+<<<<<<< Updated upstream
     <title>Document</title>
 </head>
 <body>
@@ -13,17 +25,31 @@
 $name = $_POST['name'];
 
 ?>
+=======
+    <title>３章チェックテスト</title>
+</head>
+<body>
+
+>>>>>>> Stashed changes
 
 
 <p>お疲れ様です <?php echo $name; ?> さん</p>
 <form action="answer.php" method="POST">
     <h2>①ネットワークのポート番号は何番？</h2>
 
+<<<<<<< Updated upstream
     <?php $port = ["80","22","20","21"];
     $answer = $port[0];
     
     foreach ($port as $value) { ?>
         <input type="radio" name="port" value="<?php echo $value; ?>">
+=======
+    <?php $ports = ["80","22","20","21"];
+    $answer = $ports[0];
+    
+    foreach ($ports as $value) { ?>
+        <input type="radio" name="ports" value="<?php echo $value; ?>">
+>>>>>>> Stashed changes
         <?php echo $value; 
     } ?>
 
