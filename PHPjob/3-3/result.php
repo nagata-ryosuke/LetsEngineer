@@ -1,20 +1,3 @@
-<<<<<<< Updated upstream
-<!-- 占い結果 -->
-
-<?php
-$numbers = $_POST['numbers'];
-?>
-
-<p><?php echo date("Y/m/d", time()); ?>の運勢は</p>
-<p>選ばれた数字は「
-    <?php echo mt_rand(1,9); ?> 」</p>
-<p>
-    <?php
-    $omikuji = array('大吉','中吉','小吉');
-    $result = rand(0,2);
-    echo $omikuji[$result]; ?>
-    </p>
-=======
 <!-- 3章 練習問題2 -->
 
 
@@ -43,4 +26,3 @@ $numbers = $_POST['numbers'];
     <p>名前は <?php echo $name; ?>  です。</p>
     <p>番号は<?php echo $number ?>です。</p>
     <p>結果は <?php echo $result ?>です。</p>
->>>>>>> Stashed changes
