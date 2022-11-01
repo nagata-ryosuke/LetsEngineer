@@ -3,16 +3,6 @@
 
 <?php
 
-<<<<<<< Updated upstream
-const TAX = 1.1;
-
-$products = ["鉛筆" => 100 , "消しゴム" => 150 , "物差し" => 500];
-
-foreach ($products as $key => $value) {
-    echo $key;
-    echo 'は';
-    echo $value * TAX;
-=======
 $price1 = 100;
 $price2 = 150;
 $price3 = 500;
@@ -33,7 +23,6 @@ foreach ($products as $key => $value) {
     echo $key;
     echo 'の税込価格は';
     echo $value;
->>>>>>> Stashed changes
     echo '円です。';
     echo '<br>';
 }
